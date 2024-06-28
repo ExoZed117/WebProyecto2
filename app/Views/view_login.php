@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Log in</title>
+  <title>Gimnasio GYM | Log in</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -13,65 +13,34 @@
   <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/dist/css/adminlte.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/login.css">
 </head>
-<body class="hold-transition login-page">
-<div class="login-box">
-  <div class="login-logo">
-    <a href="../../index2.html"><b>Gimnasio </b> GYM</a>
-  </div>
-  <!-- /.login-logo -->
-  <div class="card">
-    <div class="card-body login-card-body">
-      <p class="login-box-msg">Ingrese al sistema</p>
-
+<body>
+<div id="form">
+  <div id="form-body">
+    <div id="welcome-lines">
+      <div id="welcome-line-1">Gimnasio GYM</div>
+      <div id="welcome-line-2">Ingrese al sistema</div>
+    </div>
+    <div id="input-area">
       <form action="<?php echo base_url().'validar'?>" method="post">
-        <div class="input-group mb-3">
-          <input type="text" class="form-control" name="usuario" id="usuario" placeholder="Usuario">
-          <div class="input-group-append">
-            <div class="input-group-text">
-              <span class="fas fa-user"></span>
-            </div>
-          </div>
+        <div class="form-inp">
+          <input type="text" name="usuario" id="usuario" placeholder="Usuario">
         </div>
-        <div class="input-group mb-3">
-          <input type="password" class="form-control" name="password" id="password" placeholder="Password">
-          <div class="input-group-append">
-            <div class="input-group-text">
-              <span class="fas fa-lock"></span>
-            </div>
-          </div>
+        <div class="form-inp">
+          <input type="password" name="password" id="password" placeholder="Password">
         </div>
-        <div class="row">
-          
-          <!-- /.col -->
-          <div class="col-12">
-            <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
-          </div>
-          <!-- /.col -->
+        <div id="submit-button-cvr">
+          <button type="submit" id="submit-button">Ingresar</button>
         </div>
       </form>
-
-      <br>
-
-      <div class="row">
-        <div class="col-12">
-          <?php if(isset($mensaje)){?>
-              <div class="alert alert-<?= $tipo; ?>" role="alert">
-                <strong>Error</strong> <?= $mensaje; ?>
-              </div>
-          <?php } ?>
-        </div>
-      </div>
-
-      
-      <!-- /.social-auth-links -->
-
-      
     </div>
-    <!-- /.login-card-body -->
+    <div id="forgot-pass">
+      <a href="#">¿Olvidó su contraseña?</a>
+    </div>
   </div>
 </div>
-<!-- /.login-box -->
 
 <!-- jQuery -->
 <script src="<?php echo base_url(); ?>/assets/plugins/jquery/jquery.min.js"></script>

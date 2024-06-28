@@ -1,0 +1,62 @@
+/* Fondo del sidebar */
+.custom-sidebar {
+    background-color: #161616;
+    padding-top: 20px;
+  }
+  
+  /* Estilo de los links */
+  .custom-link {
+    color: #00FF7F;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .custom-link .nav-icon {
+    color: #00FF7F;
+    margin-right: 10px;
+  }
+  
+  .custom-link:hover {
+    background-color: #00FF7F;
+    color: #161616;
+  }
+  
+  .custom-link:hover .nav-icon {
+    color: #161616;
+  }
+  
+  /* Estilo para la etiqueta de badge */
+  .custom-link .badge-info {
+    background-color: #00FF7F;
+    color: #161616;
+    margin-left: 10px;
+  }
+  
+  /* Alineación de los items */
+  .custom-sidebar .nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .custom-sidebar .nav-item .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+  }
+  
+  .custom-sidebar .nav-item .nav-link p {
+    margin: 0;
+  }
+  
+  .custom-sidebar .nav-item .nav-link i.nav-icon {
+    font-size: 1.2rem;
+  }
+  
+  .custom-sidebar .nav-item .nav-link .right {
+    margin-left: auto;
+  }
+  
