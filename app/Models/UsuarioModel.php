@@ -14,7 +14,7 @@ class UsuarioModel extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['idUsuario','usuario','password','nombre', 'apellidoPat','apellidoMat','rol','celular','direccion','estado'];
+    protected $allowedFields = ['usuario', 'password', 'nombre', 'apellidoPat', 'apellidoMat', 'rol', 'celular', 'direccion', 'estado', 'created_at', 'id_Materia'];
 
     public function getUsuario($valor){
         $this->db->connect();

@@ -74,6 +74,10 @@ $routes->get('/cobros/edit/(:num)', 'Cobros::edit/$1');
 $routes->post('/cobros/update/(:num)', 'Cobros::update/$1');
 $routes->get('/cobros/delete/(:num)', 'Cobros::delete/$1');
 
+// clientes 
+$routes->add('/clientes', 'Clientes::index');
+
+
 
 /*
  * --------------------------------------------------------------------
